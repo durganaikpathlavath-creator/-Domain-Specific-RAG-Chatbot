@@ -1,0 +1,45 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables / API keys - NEVER commit these
+.env
+.env.*
+!.env.example
+
+# Streamlit secrets (API keys on Streamlit Cloud / local)
+.streamlit/secrets.toml
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+
+# Saved FAISS index: it contains text from the documents you indexed
+vector_store/saved_index/
+faiss_index/
+vectorstore/
+
+# Uploaded / generated files
+uploads/
+outputs/
+
+# Local test output you may not want to commit (remove this line to commit your results)
+# tests/results.csv

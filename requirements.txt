@@ -1,0 +1,20 @@
+# Core app
+streamlit
+python-dotenv
+
+# PDF extraction
+pypdf
+
+# LangChain (split into small packages; the old langchain_community embeddings/loaders are deprecated)
+langchain-core
+langchain-community
+langchain-text-splitters
+langchain-huggingface
+langchain-google-genai
+
+# Embeddings + vector database
+sentence-transformers
+faiss-cpu
+
+# TIP: after you have tested the app successfully, run `pip freeze > requirements-lock.txt`
+# and pin exact versions here so deployments (Streamlit Cloud, Docker) stay reproducible.
